@@ -1,0 +1,6 @@
+name: possum
+version: 0.0.1
+author: Luke Church <luke@church.name>
+description: A simple dataflow engine for research purposes
+environment:
+  sdk: '>=1.0.0 <2.0.0'
