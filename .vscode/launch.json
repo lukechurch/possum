@@ -6,9 +6,9 @@
             "type": "dart-cli",
             "request": "launch",
             "cwd": "${workspaceRoot}",
-            "sdkPath": "${command.sdkPath}",
             "program": "${workspaceRoot}/bin/demo.dart",
-            "args": []
+            "args": [],
+            "debugSettings": "${command.debugSettings}"
         }
     ]
 }
