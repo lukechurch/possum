@@ -39,18 +39,18 @@ class DepGraph<T> {
     }
   }
 
-  get eligable => nodes.where((n) => n.dirty && n.dependants.every((nd) => !nd.dirty));
+  get eligible => nodes.where((n) => n.dirty && n.dependants.every((nd) => !nd.dirty));
   get dirtyNodes => nodes.where((n) => n.dirty);
 
   step() {
-    var nodesToUpdate = eligable.toList();
+    var nodesToUpdate = eligible.toList();
     for (DepNode nd in nodesToUpdate) {
       nd.eval();
     }
   }
 
   update() {
-    while (eligable.length > 0) {
+    while (eligible.length > 0) {
       step();
     }
   }
