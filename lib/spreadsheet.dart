@@ -100,8 +100,8 @@ class Location {
   const Location(this.row, this.col);
   toString() => "R$row:C$col";
 
-  bool operator ==(Location other) {
-    return row == other.row && col == other.col;
+  bool operator ==(other) {
+    return other is Location && row == other.row && col == other.col;
   }
 
   int get hashCode => 10000 * row + col; // TODO: Fix dumb hashcode
