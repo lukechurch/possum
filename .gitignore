@@ -22,6 +22,9 @@ build/
 # Directory created by dartdoc
 doc/api/
 
+# Directories created by code editors
+.vscode/
+
 # Don't commit pubspec lock file 
 # (Library packages only! Remove pattern if developing an application package)
 pubspec.lock
